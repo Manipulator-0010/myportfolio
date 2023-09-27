@@ -1,0 +1,782 @@
+/*font for = font-family: 'Manrope', sans-serif*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+
+/*font for = font-family: 'Rubik', sans-serif*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Desktop Navigation*/
+.navigation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(bg-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 93vh;
+  width: 100%;
+}
+nav {
+  width: 99%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+ul {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+ul li {
+  list-style: none;
+  padding: 10px 30px;
+  margin-top: 25px;
+  margin-left: -34px;
+  display: inline-block;
+}
+ul li a {
+  text-decoration:none;
+  color: #000;
+  font-size: 22px;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  transition: 0.3s ease;
+}
+ul li a:hover {
+  color: #87ceeb;
+  text-decoration:underline #fff;
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  background: #8400ff;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  transition: 1s ease;
+}
+ul li a:hover:after {
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+/*Andriod Navigation*/
+.topnav {
+  background: #333;
+  overflow: hidden;
+  display: none;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.container-navigation .topnav .text {
+  text-align: center;
+}
+.topnav a:hover {
+  background: #ddd;
+  color: #000;
+}
+.topnav a.active {
+  height: 17px;
+}
+.topnav .icon {
+  display: none;
+}
+
+/*intro and profile desktop*/
+.container-0 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -40%;
+  height: 700px;
+}
+.flex-0 {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-0 img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  border-radius: 100px 50px 100px 10px;
+  height: 590px;
+  width: 100%;
+
+}
+.profile-0 {
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.intro-0 h1 {
+  font-size: 110px;
+  font-family: "Manrope", sans-serif;
+}
+.intro-0 h2 {
+  font-size: 75px;
+  margin-left: 15%;
+  width: 100%;
+  margin-top: -10%;
+  border-right: 3px solid;
+  overflow: hidden;
+  animation: type 2s steps(22);
+  white-space: nowrap;
+  font-family: "Manrope", sans-serif;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+.intro-0 h4 {
+  font-size: 30px;
+  border: 0px solid #000;
+  margin-left: 15%;
+  margin-top: -10%;
+  text-align: center;
+  background: orange;
+  font-family: "Manrope", sans-serif;
+}
+.intro-0 h1,
+h2,
+h4 {
+  color: #fff;
+}
+.intro-0 h2{
+  letter-spacing:7px;
+}
+
+/*hide intro and profile in desktop*/
+.flex-1 {
+  display: none;
+}
+
+/*AboutMe in desktop screen*/
+.container-2 {
+  margin: 0 auto;
+  width: 65%;
+  margin-top: 7%;
+}
+.about-me h2 {
+  background-image: linear-gradient(#240000, #ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 65px;
+  font-family: "Manrope", sans-serif;
+}
+.about-me p {
+  font-size: 30px;
+  font-family: "Manrope", sans-serif;
+}
+
+/*Hide AboutMe in Andriod screen*/
+.container-3 {
+  display: none;
+}
+
+/*Primary Skill Background Desktop Screen*/
+.container-4 {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 7%;
+}
+.skill-0 h2 {
+  color:#ff0000;
+  font-size: 55px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 11px;
+}
+.video-0 {
+  width: 100%;
+  margin-top: 2%;
+}
+
+/*Primary Skill Icon Desktop Screen*/
+.container-5 {
+  margin: 0 auto;
+  width: 60%;
+}
+.flex-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -78%;
+  border: 2px solid #87ceeb;
+}
+.images img {
+  width: 100%;
+  height: 110px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+.images h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  width: 130%;
+  font-size: 15px;
+  margin: 0 auto;
+  margin-left: -11%;
+}
+
+/*resize icon for install operating system*/
+#resize {
+  width: 53%;
+  margin-left: 19%;
+  background: #fff;
+}
+#resize-text {
+  margin-left: -19%;
+}
+
+/*resize icon for install software's*/
+#resize-1 {
+  width: 72%;
+  background: #fff;
+}
+#resize-text-1 {
+  margin-left: -23%;
+}
+
+/*resize icon for reformating computers*/
+#resize-2 {
+  width: 65%;
+  background: #fff;
+  margin-left: 11%;
+}
+#resize-text-2 {
+  margin-left: -22%;
+}
+
+/*resize icon for repair computers*/
+#resize-3 {
+  width: 75%;
+  margin-left: 27%;
+  background: #fff;
+}
+#resize-text-3 {
+  margin-left: -5%;
+}
+
+.flex-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+}
+
+/* hide title in Primary Skill Icon Android Screen*/
+.container-8 {
+  display: none;
+}
+
+/*Primary Skill Icon Desktop Screen*/
+.container-9 {
+  display: none;
+}
+.container-10 {
+  display: none;
+}
+
+/*Title for my journey Desktop Screen*/
+.container-15 {
+  width: 85%;
+  margin-top: 35%;
+}
+.container-15 h2 {
+  color: #000;
+  font-size: 45px;
+  font-family: "Rubik", sans-serif;
+  background-image: linear-gradient(#240000, #00b9ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.container-15 p {
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+}
+
+/*Hide from journey Android Screen*/
+.container-16 {
+  display: none;
+}
+
+/*Title MyProject in desktop Screen*/
+.container-17 {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 10%;
+}
+.container-17 h2 {
+  background-image: linear-gradient(#240000, #00b9ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 55px;
+  font-family: "Manrope", sans-serif;
+}
+
+/*YouTube Video Desktop Screen*/
+.container-18 {
+  margin: 0 auto;
+  width: 70%;
+}
+.container-18 iframe {
+  width: 100%;
+  height: 700px;
+}
+
+/*Hide Title MyProject in Android Screen*/
+.container-19 {
+  display: none;
+}
+
+/*Title MyProject in Android Screen*/
+.container-20 {
+  display: none;
+}
+
+/*Title of The three things must Remember in desktop screen*/
+.container-21 {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 7%;
+}
+.container-21 h2 {
+  color: #000;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  background-image: -webkit-linear-gradient(#4765bc, #33a6d5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*The three things must Remember in desktop screen*/
+.container-22 {
+  margin: 0 auto;
+  width: 85%;
+  margin-top: 3%;
+}
+.container-22 .flex-8 {
+  display: flex;
+  width: 90%;
+  margin-left: 7%;
+}
+.flex-8 h2,
+p {
+  width: 85%;
+  color: #000;
+  text-align: justify;
+  font-family: "Rubik", sans-serif;
+}
+.flex-8 h2 {
+  text-align: center;
+}
+
+/*Profile Footer in desktop screen*/
+.container-23 {
+  margin: 0 auto;
+  width: 10%;
+  margin-top: 7%;
+}
+.container-23 img {
+  width: 40%;
+  border-radius: 100%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  margin-left: 26%;
+  background: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(bg-4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*box-footer in desktop screen*/
+footer {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -2%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(bg-4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.future {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2%;
+  color: #fff;
+}
+.flex-9 {
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+.flex-9 i {
+  margin-left: 5%;
+  font-size: 33px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  width: 7%;
+  text-align: center;
+  background: #fff;
+  margin-top: 18%;
+  margin: 0 auto;
+  padding:5px;
+}
+.line-0 p {
+  margin-top: 5%;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3%;
+  color: #fff;
+}
+
+/*Hide Profile Footer in android screen*/
+.container-24 {
+  display: none;
+}
+
+/*Hide box-footer in android screen*/
+.container-25 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /*Desktop Navigation*/
+  .container .navigation {
+    display: none;
+  }
+  /*Andriod Navigation*/
+  .container-navigation .topnav {
+    display: block;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+    text-align: center;
+  }
+  .container-navigation .topnav .text:hover {
+    text-align: center;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  /*hide intro and profile in desktop*/
+  .container-0 {
+    display: none;
+  }
+
+  /*intro and profile andriod*/
+  .container-1 {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 15%;
+  }
+  .container-1 .flex-1 {
+    display: block;
+    justify-content: center;
+  }
+  .profile-1 img {
+    width: 50%;
+    border-radius: 100%;
+    border: 1px solid #000;
+    margin-left: 22%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(bg-4.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .intro-1 p {
+    text-align: center;
+    margin-top: 5%;
+    color: #000;
+    overflow: hidden;
+    animation: type 2s steps(22);
+    white-space: nowrap;
+    width: 100%;
+  }
+  @keyframes type {
+    from {
+      width: 0;
+    }
+  }
+
+  /*Hide AboutMe in desktop screen*/
+  .container-2 {
+    display: none;
+  }
+
+  /*AboutMe in Andriod screen*/
+  .container-3 {
+    display: block;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5%;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.1)),
+      url(bg-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .about-1 h2,
+  p {
+    color: #fff;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 3%;
+    font-family: "Manrope", sans-serif;
+  }
+
+  /*Hide Primary Skill Background Desktop Screen*/
+  .container-4 {
+    display: none;
+  }
+  .video-0 {
+    display: none;
+  }
+  .container-5 .flex-2 {
+    display: none;
+  }
+  .container-6 .flex-3 {
+    display: none;
+  }
+  .container-7 .flex-3 {
+    display: none;
+  }
+
+  /*Primary Skill Icon Android Screen*/
+  .container-8 {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 35%;
+    display: block;
+  }
+  .skill-1 h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Manrope", sans-serif;
+    background-image: linear-gradient(#240000, #00b9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .container-9 {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    margin-left: -1%;
+  }
+  .flex-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15%;
+  }
+  .flex-4 img {
+    width: 100%;
+    height: 50px;
+  }
+
+  .container-10 {
+    margin-top: 14%;
+    display: block;
+    margin-left: -1%;
+    width: 100%;
+  }
+
+  /*Input border for rlds*/
+  #input-border{
+    border:1px solid #000;
+    border-radius:100%;
+  }
+  .flex-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .flex-5 img {
+    width: 100%;
+    height: 50px;
+  }
+
+  /*Hide Title for my journey Desktop Screen*/
+  .container-15 {
+    display: none;
+  }
+
+  /*Title for my journey Android Screen*/
+  .container-16 {
+    margin-top: 14%;
+    display: block;
+  }
+  .container-16 h2 {
+    color: #842be9;
+    text-align: center;
+    font-size: 23px;
+    font-family: "Lobster", cursive;
+  }
+  .container-16 p {
+    color: #000;
+    font-size: 14px;
+  }
+
+  /*Hide Title MyProject in desktop Screen*/
+  .container-17 {
+    display: none;
+  }
+
+  /*Hide YouTube Video Desktop Screen*/
+  .container-18 {
+    display: none;
+  }
+  /*Title MyProject in Android Screen*/
+  .container-19 {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+  }
+  .container-19 h2 {
+    color: #000;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 23px;
+    margin-top: 16%;
+  }
+
+  /*Title MyProject in Android Screen*/
+  .container-20 {
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 5%;
+    display: block;
+  }
+  .container-20 iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  /*Hide Title of The three things must Remember in desktop screen*/
+  .container-21 {
+    display: none;
+  }
+
+  /*The three things must Remember in desktop screen*/
+  .container-22 {
+    display: none;
+  }
+
+  /*Hide Profile Fotter in desktop screen*/
+  .container-23 {
+    display: none;
+  }
+
+  /*Hide box-footer in desktop screen*/
+  footer {
+    display: none;
+  }
+
+  /*Profile Footer in android screen*/
+  .container-24 {
+    margin: 0 auto;
+    width: 25%;
+    margin-top: 15%;
+    display: block;
+  }
+  .container-24 img {
+    width: 50%;
+    border-radius: 100%;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    margin-left: 26%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(bg-4.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /*box-footer in android screen*/
+  .container-25 {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: -5%;
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url(bg-3.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .future-1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  .flex-10 {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 35%;
+  }
+  .flex-10 i {
+    font-size: 23px;
+    text-align:center;
+    margin: 0 auto;
+    color:#fff;
+    padding:3%;
+  }
+  .line-1 p {
+    margin-top: 5%;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 100%;
+    font-size: 10px;
+  }
+}
